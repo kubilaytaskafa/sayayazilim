@@ -14,7 +14,7 @@ const Admin = () => {
         id="admin"
         className="flex items-center justify-center bg-secondary flex-col gap-12 rounded-lg shadow-2xl shadow-main border border-gray-300  "
       >
-        <article className="flex items-center justify-center flex-col p-8 lg:p-12 gap-8 ">
+        <article className="flex items-center justify-center flex-col p-8 lg:py-10 lg:px-20 gap-8 ">
           <img
             src={Logo}
             alt="Saya Yazılım Logosu"
@@ -24,8 +24,8 @@ const Admin = () => {
             Saya Yazılım Admin Paneli
           </h1>
           <form className="flex items-center justify-center flex-col gap-4 lg:gap-6">
-            <div className="flex items-center justify-center gap-4 flex-col lg:flex-row ">
-              <label htmlFor="username" className="text-center text-main">
+            <div className="flex items-center justify-center gap-4 lg:gap-6 flex-col lg:flex-row ">
+              <label htmlFor="username" className=" text-main text-md">
                 Kullanıcı Adı
               </label>
               <input
@@ -33,22 +33,22 @@ const Admin = () => {
                 name="username"
                 id="username"
                 placeholder="Kullanıcı Adı"
-                className="px-6 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-main focus:border-transparent"
+                className="px-6 py-2  border border-gray-300 rounded-md focus:outline-none focus:ring-2 lg:ml-6 focus:ring-main focus:border-transparent"
               />
             </div>
-            <div className="flex items-center justify-center gap-4 lg:gap-20 flex-col lg:flex-row">
+            <div className="flex items-center justify-center gap-4 lg:gap-24 flex-col lg:flex-row">
               <label htmlFor="password" className="text-center text-main">
                 Şifre
               </label>
 
               {/* Container for input + button */}
-              <div className="relative w-full max-w-[250px]">
+              <div className=" flex items-center justify-center gap-12 relative w-full max-w-[250px]">
                 <input
                   type={showPassword ? "text" : "password"}
                   name="password"
                   id="password"
                   placeholder="Şifre"
-                  className="w-full px-4 py-2 pr-10 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-main focus:border-transparent"
+                  className=" px-4 py-2 pr-10 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-main focus:border-transparent"
                 />
                 <button
                   type="button"
