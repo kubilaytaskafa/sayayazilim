@@ -34,6 +34,7 @@ const Admin = () => {
                 id="username"
                 placeholder="Kullanıcı Adı"
                 className="px-6 py-2  border border-gray-300 rounded-md focus:outline-none focus:ring-2 lg:ml-6 focus:ring-main focus:border-transparent"
+                required
               />
             </div>
             <div className="flex items-center justify-center gap-4 lg:gap-24 flex-col lg:flex-row">
@@ -49,6 +50,7 @@ const Admin = () => {
                   id="password"
                   placeholder="Şifre"
                   className=" px-4 py-2 pr-10 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-main focus:border-transparent"
+                  required
                 />
                 <button
                   type="button"

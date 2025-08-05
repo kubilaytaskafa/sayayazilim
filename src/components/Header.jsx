@@ -26,35 +26,34 @@ const Header = () => {
       <nav className="hidden lg:flex">
         <ul className="flex items-center justify-center gap-6 relative">
           <li className="font-semibold hover:text-main transition duration-300 cursor-pointer">
-            Anasayfa
+            <a href="/">Anasayfa</a>
           </li>
           <li className="font-semibold hover:text-main transition duration-300 cursor-pointer">
-            Hizmetlerimiz
+            <a href="/#services"> Hizmetlerimiz</a>
           </li>
           <li className="font-semibold hover:text-main transition duration-300 cursor-pointer">
-            Projelerimiz
-          </li>
-          <li>
-            <a href="/admin">Admin</a>
+            <a href="/#projects"> Projelerimiz</a>
           </li>
 
           {/* Kurumsal - Masaüstü */}
           <li className="relative">
             <button
               onClick={() => toggleSubmenu("kurumsal")}
-              className="font-semibold hover:text-main transition duration-300 cursor-pointer"
+              className={` font-semibold transition duration-300 cursor-pointer ${
+                openSubmenu === "kurumsal" ? "bg-main text-secondary" : ""
+              } p-2 rounded-lg`}
             >
               Kurumsal
             </button>
             {openSubmenu === "kurumsal" && (
-              <ul className="absolute top-full left-0 mt-2 bg-white border rounded shadow-md text-gray-800 min-w-[180px] z-50">
+              <ul className="absolute top-full left-0 mt-2 bg-secondary  rounded-xl shadow-xl   min-w-[180px] z-50">
                 <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
                   Hakkımızda
                 </li>
                 <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
                   Misyonumuz
                 </li>
-                <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
+                <li className="px-4 py-2 hover:text-main cursor-pointer">
                   Vizyonumuz
                 </li>
               </ul>
@@ -65,16 +64,18 @@ const Header = () => {
           <li className="relative">
             <button
               onClick={() => toggleSubmenu("referanslar")}
-              className="font-semibold hover:text-main transition duration-300 cursor-pointer"
+              className={` font-semibold transition duration-300 cursor-pointer ${
+                openSubmenu === "referanslar" ? "bg-main text-secondary" : ""
+              } p-2 rounded-lg`}
             >
               Referanslar
             </button>
             {openSubmenu === "referanslar" && (
-              <ul className="absolute top-full left-0 mt-2 bg-white border rounded shadow-md text-gray-800 min-w-[180px] z-50">
-                <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
+              <ul className="absolute top-full right-0 mt-2 bg-secondary  rounded-xl shadow-md text-gray-800 min-w-[180px] z-50 text-center flex items-center flex-col gap-2">
+                <li className="px-4 py-2 hover:text-main cursor-pointer">
                   Müşteri Yorumları
                 </li>
-                <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
+                <li className="px-4 py-2 hover:text-main  cursor-pointer">
                   Tamamlanan Projeler
                 </li>
               </ul>
@@ -98,25 +99,25 @@ const Header = () => {
 
       {/* MOBİL MENÜ */}
       {isOpen && (
-        <nav className="flex flex-col items-start justify-start gap-6 p-8 lg:hidden absolute top-0 left-0 w-2/3 h-screen bg-secondary z-50 border-r border-gray-600 shadow-xl shadow-gray overflow-y-auto">
+        <nav className="flex flex-col items-start justify-start gap-6 p-8 lg:hidden absolute top-0 left-0 w-1/2 md:w-1/3 h-screen bg-secondary z-50 border-r border-gray-600 shadow-xl shadow-gray  rounded-r-2xl overflow-y-auto">
           <ul className="flex flex-col items-start justify-start gap-4 w-full">
             <li
               className="font-semibold hover:text-main transition duration-300 cursor-pointer"
               onClick={openHandler}
             >
-              Anasayfa
+              <a href="#hero">Anasayfa</a>
             </li>
             <li
               className="font-semibold hover:text-main transition duration-300 cursor-pointer"
               onClick={openHandler}
             >
-              Hizmetlerimiz
+              <a href="#services">Hizmetlerimiz</a>
             </li>
             <li
               className="font-semibold hover:text-main transition duration-300 cursor-pointer"
               onClick={openHandler}
             >
-              Projelerimiz
+              <a href="#projects">Projelerimiz</a>
             </li>
 
             {/* Kurumsal - Mobil */}
@@ -132,19 +133,19 @@ const Header = () => {
                   className="cursor-pointer hover:text-main"
                   onClick={openHandler}
                 >
-                  Hakkımızda
+                  <a href="/about">Hakkımızda</a>
                 </li>
                 <li
                   className="cursor-pointer hover:text-main"
                   onClick={openHandler}
                 >
-                  Misyonumuz
+                  Misyon & Vizyon
                 </li>
                 <li
                   className="cursor-pointer hover:text-main"
                   onClick={openHandler}
                 >
-                  Vizyonumuz
+                  Ekibimiz
                 </li>
               </ul>
             )}
@@ -162,13 +163,13 @@ const Header = () => {
                   className="cursor-pointer hover:text-main"
                   onClick={openHandler}
                 >
-                  Müşteri Yorumları
+                  Kimlerle Çalıştık?
                 </li>
                 <li
                   className="cursor-pointer hover:text-main"
                   onClick={openHandler}
                 >
-                  Tamamlanan Projeler
+                  Projelerimiz
                 </li>
               </ul>
             )}
