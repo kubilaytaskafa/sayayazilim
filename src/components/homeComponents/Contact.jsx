@@ -9,7 +9,12 @@ import ContactForm from "../defaultComponents/ContactForm";
 const Contact = () => {
   const [isVisible, setIsVisible] = useState(false);
   const ref = useRef(null);
-
+  // ! whatsapp message template
+  const message = `Merhaba, Saya Yazılım ile ilgili bilgi almak istiyorum.
+Özellikle [web sitesi / mobil uygulama / özel yazılım] geliştirme hizmetiniz hakkında detay verebilir misiniz?
+Müsait olduğunuzda dönüş yaparsanız sevinirim.
+Teşekkürler.`;
+  const encodedMessage = encodeURIComponent(message);
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -59,7 +64,7 @@ const Contact = () => {
           <div className="flex flex-row items-center gap-2 text-center">
             <FaLocationDot className="text-xl text-main flex-shrink-0" />
             <a
-              href="#"
+              href="https://www.google.com/maps/place/%C3%96zg%C3%BCrl%C3%BCk,+Yahya+Kemal+Cad.+No:98,+07025+Kepez%2FAntalya/@36.915128,30.6821681,17z/data=!3m1!4b1!4m6!3m5!1s0x14c38fc0e9ef95cb:0x9f25916bcd3769ec!8m2!3d36.915128!4d30.684743!16s%2Fg%2F11c2h2f4tj?entry=ttu&g_ep=EgoyMDI1MDgwNi4wIKXMDSoASAFQAw%3D%3D"
               className="font-semibold text-sm lg:text-md text-gray-600 hover:text-main transition duration-300"
             >
               Özgürlük Mah. Yahya Kemal Cad. No:98/A Kepez / ANTALYA
@@ -89,7 +94,7 @@ const Contact = () => {
           <div className="flex flex-row items-center gap-2">
             <IoLogoWhatsapp className="text-xl text-main flex-shrink-0" />
             <a
-              href="https://wa.me/905419724041"
+              href={`https://wa.me/905419724041?text=${encodedMessage}`}
               target="_blank"
               rel="noopener noreferrer"
               className="font-semibold text-md text-gray-600 hover:text-main transition duration-300"

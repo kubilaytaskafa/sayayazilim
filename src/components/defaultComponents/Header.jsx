@@ -3,7 +3,7 @@ import Logo from "../../images/saya-logo.webp";
 import { CiMenuFries } from "react-icons/ci";
 import { IoMdClose } from "react-icons/io";
 import { HashLink as Link } from "react-router-hash-link";
-
+import { motion } from "framer-motion";
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [openSubmenu, setOpenSubmenu] = useState(null);
@@ -111,25 +111,45 @@ const Header = () => {
 
       {/* MOBİL MENÜ */}
       {isOpen && (
-        <nav className="flex flex-col items-start justify-start gap-6 p-8 lg:hidden absolute top-0 left-0 w-1/2 md:w-1/3 h-screen bg-secondary z-50 border-r border-gray-600 shadow-xl shadow-gray  rounded-r-2xl overflow-y-auto">
-          <ul className="flex flex-col items-start justify-start gap-4 w-full">
+        <motion.nav
+          initial={{ opacity: 0, x: -50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.3 }}
+          exit={{ opacity: 0, x: -50 }}
+          className="flex flex-col items-start justify-start gap-6 px-4 text-left lg:hidden absolute top-0 left-0 w-1/2 text-sm md:w-1/4 h-screen  bg-secondary z-50 border-r py-4 border-gray-600 shadow-4xl shadow-main shadow-r   overflow-y-auto"
+        >
+          <ul className="flex flex-col items-start justify-start gap-4 w-full px-4">
             <li
               className="font-semibold hover:text-main transition duration-300 cursor-pointer"
               onClick={openHandler}
             >
-              <a href="#hero">Anasayfa</a>
+              <Link smooth to="/">
+                Anasayfa
+              </Link>
             </li>
             <li
               className="font-semibold hover:text-main transition duration-300 cursor-pointer"
               onClick={openHandler}
             >
-              <a href="#services">Hizmetlerimiz</a>
+              <Link smooth to="/#services">
+                Hizmetlerimiz
+              </Link>
             </li>
             <li
               className="font-semibold hover:text-main transition duration-300 cursor-pointer"
               onClick={openHandler}
             >
-              <a href="#projects">Projelerimiz</a>
+              <Link smooth to="/#projects">
+                Projelerimiz
+              </Link>
+            </li>
+            <li
+              className="font-semibold hover:text-main transition duration-300 cursor-pointer"
+              onClick={openHandler}
+            >
+              <Link smooth to="/#contact">
+                İletişim
+              </Link>
             </li>
 
             {/* Kurumsal - Mobil */}
@@ -145,19 +165,19 @@ const Header = () => {
                   className="cursor-pointer hover:text-main"
                   onClick={openHandler}
                 >
-                  <a href="/about">Hakkımızda</a>
+                  <Link to="/about">Hakkımızda</Link>
                 </li>
                 <li
                   className="cursor-pointer hover:text-main"
                   onClick={openHandler}
                 >
-                  Misyon & Vizyon
+                  <Link to="/mission">Misyon & Vizyon</Link>
                 </li>
                 <li
                   className="cursor-pointer hover:text-main"
                   onClick={openHandler}
                 >
-                  Ekibimiz
+                  <Link to="/team">Ekibimiz</Link>
                 </li>
               </ul>
             )}
@@ -175,18 +195,18 @@ const Header = () => {
                   className="cursor-pointer hover:text-main"
                   onClick={openHandler}
                 >
-                  Kimlerle Çalıştık?
+                  <Link to="/testimonials">Müşteri Yorumları</Link>
                 </li>
                 <li
                   className="cursor-pointer hover:text-main"
                   onClick={openHandler}
                 >
-                  Projelerimiz
+                  <Link to="/projects">Projelerimiz</Link>
                 </li>
               </ul>
             )}
           </ul>
-        </nav>
+        </motion.nav>
       )}
     </header>
   );

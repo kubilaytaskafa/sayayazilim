@@ -2,7 +2,7 @@ import React from "react";
 
 const ContactForm = () => {
   return (
-    <form className="max-w-md mx-auto p-6 md:p-12 border border-main rounded-lg shadow-2xs shadow-main flex flex-col gap-6">
+    <form className="max-w-md mx-auto p-6 md:p-12 border border-main rounded-lg shadow-md shadow-main flex flex-col gap-6">
       {/* Adınız */}
       <div className="flex flex-col md:flex-row items-start md:items-center gap-2 md:gap-4">
         <label

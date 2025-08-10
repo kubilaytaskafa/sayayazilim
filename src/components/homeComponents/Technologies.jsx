@@ -4,6 +4,7 @@ import { SiGoogleplay, SiDelphi, SiRadstudio } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io5";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { FaCss3 } from "react-icons/fa";
+
 const technologies = [
   { id: 1, name: "HTML", icon: <FaHtml5 />, color: "#E34C26" },
   { id: 2, name: "Google Play", icon: <SiGoogleplay />, color: "#3DDC84" },

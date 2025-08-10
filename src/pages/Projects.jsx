@@ -31,7 +31,7 @@ const Projects = () => {
               return (
                 <div
                   key={project.id}
-                  className="flex items-center justify-between flex-col lg:p-12 gap-4 text-center w-80 h-80 lg:w-96 lg:h-96 border border-gray-500 shadow-md shadow-main rounded-md hover:scale-105 transition duration-300"
+                  className="flex items-center justify-between p-4 flex-col lg:p-12 gap-4 text-center w-80 h-80 lg:w-96 lg:h-96 border border-gray-500 shadow-md shadow-main rounded-md hover:scale-105 transition duration-300"
                 >
                   <h2 className="text-md lg:text-xl font-semibold text-main mt-6">
                     {project.title}

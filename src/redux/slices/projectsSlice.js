@@ -13,6 +13,7 @@ const initialState = {
       title: "Alsancak Tarım Web Sitesi",
       description:
         "Alsancak Tarım’ın kurumsal kimliğini dijital platformda etkili biçimde yansıtan, kullanıcı deneyimini ön planda tutan mobil uyumlu ve modern bir web sitesidir. Firmanın hizmet portföyünü, ürün çeşitliliğini ve tarım sektöründeki uzmanlığını ziyaretçilere hızlı ve etkili şekilde sunar. Kolay kullanılabilir içerik yönetim sistemi sayesinde güncellemeler hızlı ve zahmetsiz yapılabilir. Aynı zamanda SEO optimizasyonlarıyla arama motorlarında güçlü bir görünürlük sağlar.",
+      url: "https://alsancaktarim.com/",
     },
     {
       id: 3,
