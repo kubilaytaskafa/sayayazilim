@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import Project from "./Project";
 import { motion } from "framer-motion";
+import Button from "./ui/Button";
 
 const Projects = () => {
   const [isVisible, setIsVisible] = useState(false); // GÖRÜNÜRLÜK STATE
@@ -30,7 +31,7 @@ const Projects = () => {
     <section
       id="projects"
       ref={ref} // REF BURAYA EKLENİR
-      className="w-full flex flex-col items-center justify-center gap-12 mt-20 mb-20 scroll-mt-40 lg:scroll-mt-32"
+      className="w-full flex flex-col items-center justify-center gap-12 mt-20  scroll-mt-40 lg:scroll-mt-32"
     >
       <motion.h2
         initial={{ opacity: 0, y: 50 }}
@@ -40,10 +41,15 @@ const Projects = () => {
       >
         Projelerimiz
       </motion.h2>
-
-      <article>
+      <motion.article
+        initial={{ opacity: 0, y: 50 }}
+        animate={isVisible ? { opacity: 1, y: 0 } : {}}
+        transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+        className="flex items-center justify-center  gap-8 flex-wrap w-full"
+      >
         <Project />
-      </article>
+      </motion.article>
+      <Button link={"/projects"}>Bütün Projelerimiz</Button>
     </section>
   );
 };

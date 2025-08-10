@@ -23,7 +23,10 @@ const Statistics = () => {
       {statistics &&
         statistics.map((item) => {
           return (
-            <div className="flex items-center justify-center flex-col gap-4">
+            <div
+              className="flex items-center justify-center flex-col gap-4"
+              key={item.id}
+            >
               <h3 className="text-4xl font-bold font-main text-main hover:rotate-6 hover:scale-110 transition duration-300">
                 {item.static}
               </h3>

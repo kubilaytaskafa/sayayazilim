@@ -34,6 +34,9 @@ const Header = () => {
           <li className="font-semibold hover:text-main transition duration-300 cursor-pointer">
             <a href="/#projects"> Projelerimiz</a>
           </li>
+          <li className="font-semibold hover:text-main transition duration-300 cursor-pointer">
+            <a href="/#contact">İletişim</a>
+          </li>
 
           {/* Kurumsal - Masaüstü */}
           <li className="relative">
