@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import heroBanner from "../images/hero-banner.jpg"; // <-- bu satırı ekle
+import heroBanner from "../../images/hero-banner.jpg"; // <-- bu satırı ekle
+import Button from "../ui/Button";
 const Hero = () => {
   const [index, setIndex] = useState(0);
   const textList = [
@@ -41,9 +42,7 @@ const Hero = () => {
           </motion.p>
         </AnimatePresence>
 
-        <button className="py-4 px-8 rounded bg-button text-secondary font-semibold shadow-md shadow-main hover:scale-105 transition duration-300">
-          Bizimle İletişime Geçin
-        </button>
+        <Button link={"#contact"}>Bizimle İletişime Geçin</Button>
       </article>
     </section>
   );

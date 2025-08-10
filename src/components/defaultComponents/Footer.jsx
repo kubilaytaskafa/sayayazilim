@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../images/saya-logo.webp";
+import Logo from "../../images/saya-logo.webp";
 import { FaLinkedin } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa6";
@@ -66,7 +66,14 @@ const Footer = () => {
       </section>
       <section className="flex items-center justify-center py-4 border-t border-white w-full">
         <p className="text-md text-white">
-          © 2024 Saya Yazılım. Tüm hakları saklıdır.
+          © 2025{" "}
+          <a
+            href="https://www.linkedin.com/company/saya-yaz%C4%B1l%C4%B1m/"
+            className="text-main hover:scale-110 transition duration-300 cursor-pointer"
+          >
+            Saya Yazılım
+          </a>{" "}
+          . Tüm hakları saklıdır.
         </p>
       </section>
     </footer>

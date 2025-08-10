@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import Project from "./Project";
 import { motion } from "framer-motion";
-import Button from "./ui/Button";
+import Button from "../ui/Button";
 
 const Projects = () => {
   const [isVisible, setIsVisible] = useState(false); // GÖRÜNÜRLÜK STATE

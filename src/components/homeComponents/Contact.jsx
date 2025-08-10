@@ -4,7 +4,7 @@ import { FaLocationDot } from "react-icons/fa6";
 import { IoIosMail } from "react-icons/io";
 import { IoLogoWhatsapp } from "react-icons/io5";
 import { FaPhoneAlt } from "react-icons/fa";
-import ContactForm from "./ContactForm";
+import ContactForm from "../defaultComponents/ContactForm";
 
 const Contact = () => {
   const [isVisible, setIsVisible] = useState(false);

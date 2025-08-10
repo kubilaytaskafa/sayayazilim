@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import Logo from "../images/saya-logo.webp";
+import Logo from "../../images/saya-logo.webp";
 import { CiMenuFries } from "react-icons/ci";
 import { IoMdClose } from "react-icons/io";
+import { HashLink as Link } from "react-router-hash-link";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,16 +27,24 @@ const Header = () => {
       <nav className="hidden lg:flex">
         <ul className="flex items-center justify-center gap-6 relative">
           <li className="font-semibold hover:text-main transition duration-300 cursor-pointer">
-            <a href="/">Anasayfa</a>
+            <Link smooth to="/#home">
+              Anasayfa
+            </Link>
           </li>
           <li className="font-semibold hover:text-main transition duration-300 cursor-pointer">
-            <a href="/#services"> Hizmetlerimiz</a>
+            <Link smooth to="/#services">
+              Hizmetlerimiz
+            </Link>
           </li>
           <li className="font-semibold hover:text-main transition duration-300 cursor-pointer">
-            <a href="/#projects"> Projelerimiz</a>
+            <Link smooth to="/#projects">
+              Projelerimiz
+            </Link>
           </li>
           <li className="font-semibold hover:text-main transition duration-300 cursor-pointer">
-            <a href="/#contact">İletişim</a>
+            <Link smooth to="/#contact">
+              İletişim
+            </Link>
           </li>
 
           {/* Kurumsal - Masaüstü */}
@@ -50,14 +59,14 @@ const Header = () => {
             </button>
             {openSubmenu === "kurumsal" && (
               <ul className="absolute top-full left-0 mt-2 bg-secondary  rounded-xl shadow-xl   min-w-[180px] z-50">
-                <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
-                  Hakkımızda
+                <li className="px-4 py-2 hover:bg-gray-100 hover:text-main transition duration-300 cursor-pointer">
+                  <Link to={"/about"}>Hakkımızda</Link>
                 </li>
-                <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
-                  Misyonumuz
+                <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-main transition duration-300">
+                  <Link to={"/Mission&Vision"}>Misyonumuz & Vizyonumuz</Link>
                 </li>
-                <li className="px-4 py-2 hover:text-main cursor-pointer">
-                  Vizyonumuz
+                <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer hover:text-main transition duration-300">
+                  <Link to={"/Team"}>Ekibimiz</Link>
                 </li>
               </ul>
             )}
@@ -75,11 +84,11 @@ const Header = () => {
             </button>
             {openSubmenu === "referanslar" && (
               <ul className="absolute top-full right-0 mt-2 bg-secondary  rounded-xl shadow-md text-gray-800 min-w-[180px] z-50 text-center flex items-center flex-col gap-2">
-                <li className="px-4 py-2 hover:text-main cursor-pointer">
-                  Müşteri Yorumları
+                <li className="px-4 py-2 hover:text-main cursor-pointer transition duration-300">
+                  <Link to={"/testimonials"}>Müşteri Yorumları</Link>
                 </li>
-                <li className="px-4 py-2 hover:text-main  cursor-pointer">
-                  Tamamlanan Projeler
+                <li className="px-4 py-2 hover:text-main  cursor-pointer transition duration-300">
+                  <Link to={"/projects"}>Projelerimiz</Link>
                 </li>
               </ul>
             )}
