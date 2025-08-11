@@ -27,9 +27,7 @@ const Header = () => {
       <nav className="hidden lg:flex">
         <ul className="flex items-center justify-center gap-6 relative">
           <li className="font-semibold hover:text-main transition duration-300 cursor-pointer">
-            <Link smooth to="/">
-              Anasayfa
-            </Link>
+            <a href="/">Anasayfa</a>
           </li>
           <li className="font-semibold hover:text-main transition duration-300 cursor-pointer">
             <Link smooth to="/#services">
