@@ -121,9 +121,7 @@ const Header = () => {
               className="font-semibold hover:text-main transition duration-300 cursor-pointer"
               onClick={openHandler}
             >
-              <Link smooth to="/">
-                Anasayfa
-              </Link>
+              <a href="/">Anasayfa</a>
             </li>
             <li
               className="font-semibold hover:text-main transition duration-300 cursor-pointer"
