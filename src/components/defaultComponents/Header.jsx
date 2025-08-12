@@ -114,7 +114,7 @@ const Header = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.4, ease: "easeOut" }}
           exit={{ opacity: 0, x: -100 }}
-          className="flex flex-col items-center justify-between gap-6 px-4 text-left lg:hidden absolute top-0 left-0 w-1/2 text-sm md:w-1/4   h-[400px] border rounded-r-xl  bg-secondary z-50 text-gray-800 py-4 border-gray-300 shadow-md shadow-main overflow-y-auto"
+          className="flex flex-col items-center justify-between gap-6 px-4 text-left lg:hidden absolute top-0 left-0 w-1/2 text-sm md:w-1/4   h-[600px] border rounded-r-xl  bg-secondary z-50 text-gray-800 py-4 border-gray-300 shadow-md shadow-main overflow-y-auto"
         >
           <ul className="flex flex-col items-start justify-start gap-4 w-full px-4">
             <li
