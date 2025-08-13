@@ -5,7 +5,7 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa6";
 const Footer = () => {
   return (
-    <footer className="w-full flex items-center justify-center flex-col  bg-footer">
+    <footer className="w-full flex items-center justify-center flex-col  bg-footer  bottom-0">
       <section className="flex w-full items-center justify-between flex-col lg:flex-row  bg-footer gap-6 p-8 lg:px-20 ">
         <article className="w-40 h-40 flex items-center justify-center">
           <img src={Logo} alt="Saya Yazılım Logosu" />
@@ -19,7 +19,7 @@ const Footer = () => {
                 <a href="/about">Hakkımızda</a>
               </li>
               <li className=" hover:text-main transition duration-300">
-                <a href="/mission">Misyon & Vizyon</a>
+                <a href="/mission-vision">Misyon & Vizyon</a>
               </li>
               <li className=" hover:text-main transition duration-300">
                 <a href="/team">Ekibimiz</a>
@@ -32,7 +32,7 @@ const Footer = () => {
           <nav className="flex items-center justify-center">
             <ul className="flex items-center justify-center gap-4 flex-col text-center text-sm">
               <li className="text-semibold text-white hover:text-main">
-                <a href="/testimonials">Müşteri Yorumları</a>
+                <a href="/">Müşteri Yorumları</a>
               </li>
               <li className="text-semibold text-white hover:text-main">
                 <a href="/projects">Projelerimiz</a>

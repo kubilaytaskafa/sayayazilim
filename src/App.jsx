@@ -1,18 +1,30 @@
-import React from "react";
+import React, { Suspense, lazy } from "react";
 import { Route, Routes } from "react-router-dom";
-import Home from "./pages/Home";
-import Admin from "./pages/Admin";
 import ScrollToUp from "./components/defaultComponents/ScrollToup";
-import Projects from "./pages/Projects";
+import Loading from "./components/defaultComponents/Loading";
+// Lazy load sayfalar
+const Home = lazy(() => import("./pages/Home"));
+const Admin = lazy(() => import("./pages/Admin"));
+const Projects = lazy(() => import("./pages/Projects"));
+const About = lazy(() => import("./pages/About"));
+const MissionAndVision = lazy(() => import("./pages/MissionAndVision"));
+const Team = lazy(() => import("./pages/Team"));
+
+// Basit Tailwind spinner component
 
 const App = () => {
   return (
     <>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/admin" element={<Admin />} />
-        <Route path="/projects" element={<Projects />} />
-      </Routes>
+      <Suspense fallback={<Loading />}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/admin" element={<Admin />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/mission-vision" element={<MissionAndVision />} />
+          <Route path="/team" element={<Team />} />
+        </Routes>
+      </Suspense>
       <ScrollToUp />
     </>
   );
