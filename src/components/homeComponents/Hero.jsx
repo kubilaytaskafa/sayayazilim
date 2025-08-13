@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import heroBanner from "../../images/hero-banner.jpg"; // <-- bu satırı ekle
+import heroBanner from "../../images/hero-banner.webp"; // <-- bu satırı ekle
 import Button from "../ui/Button";
 const Hero = () => {
   const [index, setIndex] = useState(0);
