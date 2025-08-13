@@ -39,11 +39,6 @@ const Header = () => {
               Projelerimiz
             </Link>
           </li>
-          <li className="font-semibold hover:text-main transition duration-300 cursor-pointer">
-            <Link smooth to="/#contact">
-              İletişim
-            </Link>
-          </li>
 
           {/* Kurumsal - Masaüstü */}
           <li className="relative">
@@ -90,6 +85,11 @@ const Header = () => {
                 </li>
               </ul>
             )}
+          </li>
+          <li className="font-semibold hover:text-main transition duration-300 cursor-pointer">
+            <Link smooth to="/#contact">
+              İletişim
+            </Link>
           </li>
         </ul>
       </nav>
@@ -139,14 +139,6 @@ const Header = () => {
                 Projelerimiz
               </Link>
             </li>
-            <li
-              className="font-semibold hover:text-main transition duration-300 cursor-pointer"
-              onClick={openHandler}
-            >
-              <Link smooth to="/#contact">
-                İletişim
-              </Link>
-            </li>
 
             {/* Kurumsal - Mobil */}
             <li
@@ -191,16 +183,24 @@ const Header = () => {
                   className="cursor-pointer hover:text-main"
                   onClick={openHandler}
                 >
-                  <Link to="/testimonials">Müşteri Yorumları</Link>
+                  <a href="/testimonials">Müşteri Yorumları</a>
                 </li>
                 <li
                   className="cursor-pointer hover:text-main"
                   onClick={openHandler}
                 >
-                  <Link to="/projects">Projelerimiz</Link>
+                  <Link to={"/projects"}>Projelerimiz</Link>
                 </li>
               </ul>
             )}
+            <li
+              className="font-semibold hover:text-main transition duration-300 cursor-pointer"
+              onClick={openHandler}
+            >
+              <Link smooth to="/#contact">
+                İletişim
+              </Link>
+            </li>
           </ul>
           <div className="flex items-center justify-center gap-4">
             <img src={Logo} alt="Saya Yazılım Logosu" className="w-22" />

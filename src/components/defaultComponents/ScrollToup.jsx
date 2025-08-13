@@ -1,10 +1,27 @@
 import React, { useEffect, useState } from "react";
 import { FaArrowUp } from "react-icons/fa";
+import { useLocation } from "react-router-dom";
 
 const ScrollToUp = () => {
   const [scrollPercent, setScrollPercent] = useState(0);
   const [showButton, setShowButton] = useState(false);
+  const { pathname, hash } = useLocation();
 
+  // 📌 1. Sayfa geçişlerinde otomatik yukarı çıkma
+  useEffect(() => {
+    if (hash) {
+      // Eğer /#services gibi hash varsa oraya kaydır
+      const el = document.querySelector(hash);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+      }
+    } else {
+      // Normal route ise direkt en üste
+      window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+    }
+  }, [pathname, hash]);
+
+  // 📌 2. Scroll ilerleme ve buton görünürlüğü
   useEffect(() => {
     const updateScroll = () => {
       const scrollTop = window.scrollY;
@@ -13,17 +30,19 @@ const ScrollToUp = () => {
       const scrollProgress = (scrollTop / docHeight) * 100;
 
       setScrollPercent(scrollProgress);
-      setShowButton(scrollTop > 300); // 300px sonra butonu göster
+      setShowButton(scrollTop > 300); // 300px sonra buton görünsün
     };
 
     window.addEventListener("scroll", updateScroll);
     return () => window.removeEventListener("scroll", updateScroll);
   }, []);
 
+  // 📌 3. Butona tıklayınca yukarı çık
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
+  // Daire çubuğu hesaplamaları
   const circleRadius = 28;
   const circumference = 2 * Math.PI * circleRadius;
   const offset = circumference - (scrollPercent / 100) * circumference;
