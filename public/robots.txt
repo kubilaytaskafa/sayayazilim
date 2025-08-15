@@ -1,0 +1,15 @@
+# Tüm botlara izin ver, bazı sayfaları engelle
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /login/
+Disallow: /register/
+Disallow: /private/
+
+# Google botu için özel kurallar
+User-agent: Googlebot
+Allow: /
+Disallow: /admin
+
+# Site haritası
+Sitemap: https://sayayazilim.com/sitemap.xml
