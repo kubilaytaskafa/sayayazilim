@@ -3,7 +3,7 @@ import Logo from "../../images/saya-logo.webp";
 import { CiMenuFries } from "react-icons/ci";
 import { IoMdClose } from "react-icons/io";
 import { HashLink as Link } from "react-router-hash-link";
-
+import { motion } from "framer-motion";
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [openSubmenu, setOpenSubmenu] = useState(null);
