@@ -95,12 +95,7 @@ const Header = () => {
       </nav>
 
       {/* MENU ICON (MOBİL) */}
-      {isOpen ? (
-        <IoMdClose
-          className="text-3xl cursor-pointer hover:text-main lg:hidden transition duration-300"
-          onClick={openHandler}
-        />
-      ) : (
+      {!isOpen && (
         <CiMenuFries
           className="text-3xl cursor-pointer hover:text-main lg:hidden transition duration-300"
           onClick={openHandler}
@@ -110,13 +105,21 @@ const Header = () => {
       {/* MOBİL MENÜ */}
       {isOpen && (
         <motion.nav
-          initial={{ opacity: 1, x: -100 }} // Soldan ve yukarıdan başlasın
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.4, ease: "easeOut" }}
+          initial={{ opacity: 1, x: 1500 }} // Soldan ve yukarıdan başlasın
+          animate={{ opacity: 1, x: 190 }}
+          transition={{ duration: 0.3 }}
           exit={{ opacity: 0, x: -100 }}
-          className="flex flex-col items-center justify-between gap-6 px-4 text-left lg:hidden absolute top-0 left-0 w-1/2 text-sm md:w-1/4   h-[600px] border rounded-r-xl  bg-secondary z-50 text-gray-800 py-4 border-gray-300 shadow-md shadow-main overflow-y-auto"
+          className="flex flex-col items-center justify-between gap-6 px-4 text-left lg:hidden absolute top-0 left-0 w-1/2 text-sm md:w-1/4   h-[600px] border rounded-l-xl  bg-secondary z-50 text-gray-800 py-4 border-gray-300 shadow-md shadow-main overflow-y-auto"
         >
           <ul className="flex flex-col items-start justify-start gap-4 w-full px-4">
+            <li>
+              {isOpen && (
+                <IoMdClose
+                  className="text-3xl cursor-pointer hover:text-main lg:hidden transition duration-300"
+                  onClick={openHandler}
+                />
+              )}
+            </li>
             <li
               className="font-semibold hover:text-main transition duration-300 cursor-pointer"
               onClick={openHandler}
