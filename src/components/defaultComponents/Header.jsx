@@ -3,7 +3,7 @@ import Logo from "../../images/saya-logo.webp";
 import { CiMenuFries } from "react-icons/ci";
 import { IoMdClose } from "react-icons/io";
 import { HashLink as Link } from "react-router-hash-link";
-import { motion } from "framer-motion";
+
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [openSubmenu, setOpenSubmenu] = useState(null);
@@ -105,11 +105,11 @@ const Header = () => {
       {/* MOBİL MENÜ */}
       {isOpen && (
         <motion.nav
-          initial={{ opacity: 1, x: 1500 }} // Soldan ve yukarıdan başlasın
-          animate={{ opacity: 1, x: 190 }}
+          initial={{ opacity: 1, x: 500 }} // Soldan ve yukarıdan başlasın
+          animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.3 }}
           exit={{ opacity: 0, x: -100 }}
-          className="flex flex-col items-center justify-between gap-6 px-4 text-left lg:hidden absolute top-0 left-0 w-1/2 text-sm md:w-1/4   h-[600px] border rounded-l-xl  bg-secondary z-50 text-gray-800 py-4 border-gray-300 shadow-md shadow-main overflow-y-auto"
+          className="flex flex-col items-center justify-between gap-6 px-4 text-left lg:hidden absolute top-0 right-0 w-1/2 text-sm md:w-1/4   h-screen border rounded-l-xl  bg-secondary z-50 text-gray-800 py-4 border-gray-300 shadow-md shadow-main overflow-y-auto"
         >
           <ul className="flex flex-col items-start justify-start gap-4 w-full px-4">
             <li>
@@ -205,9 +205,6 @@ const Header = () => {
               </Link>
             </li>
           </ul>
-          <div className="flex items-center justify-center gap-4">
-            <img src={Logo} alt="Saya Yazılım Logosu" className="w-22" />
-          </div>
         </motion.nav>
       )}
     </header>
