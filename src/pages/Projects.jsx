@@ -42,11 +42,11 @@ const Projects = () => {
                       {project.title}
                     </h2>
                     <p className="text-sm font-semibold text-gray-600">
-                      {project.description.split(".")[0]}
+                      {project.description.split(".")[0]}.
                     </p>
                     <div className=""></div>
                     <button className="flex text-sm items-center justify-center px-8 py-2 bg-main text-white rounded-md hover:shadow-md hover:shadow-main">
-                      Detaylı bilgi
+                      <a href={`/projects/${project.id}`}>Detaylar</a>
                     </button>
                   </div>
                 );
