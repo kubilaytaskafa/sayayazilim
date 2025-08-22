@@ -3,6 +3,7 @@ import ahmetAyas from "../../images/ahmetayas.webp";
 import kubilayTaskafa from "../../images/kubilaytaskafa.webp";
 import enesBattalOk from "../../images/enesbattalok.webp";
 import leventKok from "../../images/leventkok.webp";
+import mehmetAliIke from "../../images/mehmet-ali-ike.webp";
 import { FaLinkedin } from "react-icons/fa6";
 const Employee = () => {
   const employees = [
@@ -51,6 +52,18 @@ const Employee = () => {
         linkedin: {
           icon: <FaLinkedin />,
           url: "https://www.linkedin.com/in/leventkok/",
+        },
+      },
+    },
+    {
+      id: 5,
+      name: "Mehmet Ali İke",
+      department: "Yazılım Geliştirici",
+      image: mehmetAliIke,
+      socialMedia: {
+        linkedin: {
+          icon: <FaLinkedin />,
+          url: "https://www.linkedin.com/in/mehmetaliike/",
         },
       },
     },
