@@ -5,6 +5,7 @@ import Hero from "../components/homeComponents/Hero";
 import Projects from "../components/homeComponents/Projects";
 import Services from "../components/homeComponents/Services";
 import Technologies from "../components/homeComponents/Technologies";
+import Xlog from "../components/homeComponents/Xlog";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
         <Hero />
         <Services />
         <Projects />
+        <Xlog />
         <Technologies />
         <Contact />
       </main>
