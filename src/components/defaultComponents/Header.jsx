@@ -39,6 +39,11 @@ const Header = () => {
               Projelerimiz
             </Link>
           </li>
+          <li className="font-semibold hover:text-main transition duration-300 cursor-pointer">
+            <Link smooth to="/#Xlog">
+              Xlog Firewall
+            </Link>
+          </li>
 
           {/* Kurumsal - Masaüstü */}
           <li className="relative">
@@ -140,6 +145,14 @@ const Header = () => {
             >
               <Link smooth to="/#projects">
                 Projelerimiz
+              </Link>
+            </li>
+            <li
+              className="font-semibold hover:text-main transition duration-300 cursor-pointer"
+              onClick={openHandler}
+            >
+              <Link smooth to="/#Xlog">
+                Xlog Firewall
               </Link>
             </li>
 

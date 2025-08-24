@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
+import XlogImage from "../../images/xlog.webp";
 const Xlog = () => {
   const ref = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
@@ -30,13 +31,18 @@ const Xlog = () => {
       animate={isVisible ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.6, ease: "easeOut" }}
       ref={ref}
-      className="w-full flex flex-col items-center justify-center gap-12 mt-20 mb-20 scroll-mt-40 lg:scroll-mt-32"
-      id="services"
+      className="w-full flex flex-col items-center justify-center gap-8 mt-20 mb-20 scroll-mt-44 lg:scroll-mt-48"
+      id="Xlog"
     >
       <motion.h2 className="font-[700] text-4xl font-main text-shadow-2xs text-shadow-main">
         Xlog Firewall
       </motion.h2>
-      <p className="p-4 text-sm  font-semibold text-gray-600 lg:text-xl  text-center  lg:p-12">
+      <img
+        src={XlogImage}
+        alt=""
+        className="w-1/2 lg:w-1/3 hover:scale-105 transition duration-300 mt-2"
+      />
+      <p className="p-2 text-sm  font-semibold text-gray-600 lg:text-xl  text-center  lg:p-12">
         Ağınızda oluşabilecek illegal trafiklerin önüne geçebilmek bir derttir
         ve kullanıcılarınızın ağınızda neler yaptığını bilmeden bu kontrolü
         gerçekleştirmek ekstra zaman kaybından başka birşey değildir.
@@ -54,8 +60,8 @@ const Xlog = () => {
           ve danışmanlık hizmetleri de sunuyoruz.
         </span>
       </p>
-      <p className=" text-sm  font-semibold text-gray-600 lg:text-xl   lg:p-12 text-left lg:text-center">
-        Detaylı Bilgi İçin{" "}
+      <p className=" text-sm flex items-center justify-center gap-2 font-semibold text-gray-600 lg:text-xl   lg:p-12 text-left lg:text-center">
+        Detaylı Bilgi İçin
         <a href="https://xlog.com.tr/" className="text-red-600" target="_blank">
           Xlogg Firewall
         </a>
