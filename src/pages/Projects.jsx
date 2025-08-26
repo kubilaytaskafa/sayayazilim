@@ -9,7 +9,92 @@ const Projects = () => {
   console.log(projects);
   return (
     <>
-      <title>Saya Yazılım - Projelerimiz</title>
+      {/* SEO Meta Etiketleri */}
+      <title>
+        Saya Yazılım - Projelerimiz | Terzi Usulü Yazılım Çözümlerimiz
+      </title>
+      <meta
+        name="description"
+        content="Saya Yazılım olarak geliştirdiğimiz başarılı projeleri keşfedin. Web uygulamaları, mobil uygulamalar ve özel yazılım çözümlerimizle müşterilerimizin ihtiyaçlarını karşılıyoruz."
+      />
+      <meta
+        name="keywords"
+        content="yazılım projeleri, web uygulamaları, mobil uygulamalar, React projeleri, Node.js projeleri, özel yazılım çözümleri, İstanbul yazılım şirketi"
+      />
+      <meta name="author" content="Saya Yazılım" />
+      <meta name="robots" content="index, follow" />
+      <meta name="language" content="tr" />
+      <meta name="revisit-after" content="7 days" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+      {/* Canonical URL */}
+      <link rel="canonical" href="https://sayayazilim.com/projects" />
+
+      {/* Open Graph Meta Etiketleri */}
+      <meta
+        property="og:title"
+        content="Saya Yazılım - Projelerimiz | Başarılı Yazılım Projeleri"
+      />
+      <meta
+        property="og:description"
+        content="Saya Yazılım olarak geliştirdiğimiz başarılı projeleri keşfedin. Web uygulamaları, mobil uygulamalar ve özel yazılım çözümlerimizle müşterilerimizin ihtiyaçlarını karşılıyoruz."
+      />
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="https://sayayazilim.com/projects" />
+      <meta
+        property="og:image"
+        content="https://sayayazilim.com/src/images/saya-logo.webp"
+      />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+      <meta property="og:site_name" content="Saya Yazılım" />
+      <meta property="og:locale" content="tr_TR" />
+
+      {/* Twitter Card Meta Etiketleri */}
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta
+        name="twitter:title"
+        content="Saya Yazılım - Projelerimiz | Başarılı Yazılım Projeleri"
+      />
+      <meta
+        name="twitter:description"
+        content="Saya Yazılım olarak geliştirdiğimiz başarılı projeleri keşfedin. Web uygulamaları, mobil uygulamalar ve özel yazılım çözümlerimizle müşterilerimizin ihtiyaçlarını karşılıyoruz."
+      />
+      <meta
+        name="twitter:image"
+        content="https://sayayazilim.com/src/images/saya-logo.webp"
+      />
+
+      {/* Favicon */}
+      <link rel="icon" type="image/x-icon" href="/src/images/saya-logo.ico" />
+      <link rel="apple-touch-icon" href="/src/images/saya-logo.webp" />
+
+      {/* Schema.org Structured Data */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ItemList",
+          name: "Saya Yazılım Projeleri",
+          description: "Saya Yazılım olarak geliştirdiğimiz başarılı projeler",
+          url: "https://sayayazilim.com/projects",
+          numberOfItems: projects ? projects.length : 0,
+          itemListElement: projects
+            ? projects.map((project, index) => ({
+                "@type": "ListItem",
+                position: index + 1,
+                item: {
+                  "@type": "SoftwareApplication",
+                  name: project.title,
+                  description: project.description,
+                  url: `https://sayayazilim.com/projects/${project.id}`,
+                  applicationCategory: "WebApplication",
+                  operatingSystem: "Web Browser",
+                },
+              }))
+            : [],
+        })}
+      </script>
+
       <Header />
       <main className="bg-secondary">
         <motion.h1

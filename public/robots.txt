@@ -1,15 +1,48 @@
-# Tüm botlara izin ver, bazı sayfaları engelle
+# Saya Yazılım - Robots.txt
+# Bu dosya arama motoru botlarına hangi sayfaların taranabileceğini belirtir
+
+# Tüm botlara genel kurallar
 User-agent: *
 Allow: /
+
+# Admin ve özel sayfaları engelle
 Disallow: /admin/
+Disallow: /admin
 Disallow: /login/
 Disallow: /register/
 Disallow: /private/
+Disallow: /api/
+Disallow: /_next/
+Disallow: /static/
+Disallow: /assets/
+Disallow: /src/
 
 # Google botu için özel kurallar
 User-agent: Googlebot
 Allow: /
 Disallow: /admin
+Disallow: /admin/
+Disallow: /api/
 
-# Site haritası
+# Bing botu için özel kurallar
+User-agent: Bingbot
+Allow: /
+Disallow: /admin
+Disallow: /admin/
+Disallow: /api/
+
+# Yandex botu için özel kurallar
+User-agent: Yandex
+Allow: /
+Disallow: /admin
+Disallow: /admin/
+Disallow: /api/
+
+# Crawl-delay (bot hızını sınırla)
+Crawl-delay: 1
+
+# Site haritası konumu
 Sitemap: https://sayayazilim.com/sitemap.xml
+
+# Host bilgisi
+Host: https://sayayazilim.com

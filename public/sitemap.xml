@@ -1,36 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
-  <!-- Ana Sayfa -->
+  <!-- Ana Sayfa - En yüksek öncelik -->
   <url>
-    <loc>https://www.sayayazilim.com/</loc>
-    <lastmod>2025-08-15</lastmod>
+    <loc>https://sayayazilim.com/</loc>
+    <lastmod>2025-01-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
-  <!-- Hakkımızda -->
+  <!-- Hakkımızda Sayfası -->
   <url>
-    <loc>https://www.sayayazilim.com/about</loc>
-    <lastmod>2025-08-15</lastmod>
+    <loc>https://sayayazilim.com/about</loc>
+    <lastmod>2025-01-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- Misyon & Vizyon -->
+  <!-- Misyon & Vizyon Sayfası -->
   <url>
-    <loc>https://www.sayayazilim.com/mission-vision</loc>
-    <lastmod>2025-08-15</lastmod>
+    <loc>https://sayayazilim.com/mission-vision</loc>
+    <lastmod>2025-01-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
-  <!-- Projeler -->
+  <!-- Projeler Ana Sayfası -->
   <url>
-    <loc>https://www.sayayazilim.com/projects</loc>
-    <lastmod>2025-08-15</lastmod>
+    <loc>https://sayayazilim.com/projects</loc>
+    <lastmod>2025-01-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+  </url>
+
+  <!-- Ekip Sayfası -->
+  <url>
+    <loc>https://sayayazilim.com/team</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- İletişim Sayfası (Ana sayfadaki contact bölümü) -->
+  <url>
+    <loc>https://sayayazilim.com/#contact</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Hizmetler Bölümü (Ana sayfadaki services bölümü) -->
+  <url>
+    <loc>https://sayayazilim.com/#services</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Teknolojiler Bölümü (Ana sayfadaki technologies bölümü) -->
+  <url>
+    <loc>https://sayayazilim.com/#technologies</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Xlog Bölümü (Ana sayfadaki xlog bölümü) -->
+  <url>
+    <loc>https://sayayazilim.com/#xlog</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- İstatistikler Bölümü (Ana sayfadaki statistics bölümü) -->
+  <url>
+    <loc>https://sayayazilim.com/#statistics</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
 
 </urlset>

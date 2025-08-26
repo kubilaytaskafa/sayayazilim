@@ -11,7 +11,6 @@ const About = lazy(() => import("./pages/About"));
 const MissionAndVision = lazy(() => import("./pages/MissionAndVision"));
 const Team = lazy(() => import("./pages/Team"));
 const ProjectDetails = lazy(() => import("./pages/ProjectDetails"));
-const AdminPanel = lazy(() => import("./pages/AdminPanel"));
 
 // Basit Tailwind spinner component
 
@@ -22,7 +21,6 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/admin" element={<Admin />} />
-          <Route path="/admin/panel" element={<AdminPanel />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/projects/:id" element={<ProjectDetails />} />
           <Route path="/about" element={<About />} />
