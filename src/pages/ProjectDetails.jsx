@@ -17,7 +17,7 @@ const ProjectDetails = () => {
       {/* SEO Meta Etiketleri */}
       <title>
         {project
-          ? `${project.title} - Saya Yazılım Projesi`
+          ? `Saya Yazılım - ${project.title} `
           : "Proje Bulunamadı - Saya Yazılım"}
       </title>
       <meta
@@ -127,6 +127,7 @@ const ProjectDetails = () => {
         </script>
       )}
 
+      {/* Sayfa İçeriği */}
       <Header />
       <main className="bg-secondary p-8 h-screen w-full">
         {project ? (

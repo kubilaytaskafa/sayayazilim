@@ -45,17 +45,25 @@ const Footer = () => {
           <nav className="flex items-center justify-center">
             <ul className="flex items-center justify-center gap-4  text-center text-sm">
               <li className="text-semibold text-white hover:text-main">
-                <a href="/testimonials">
+                <a
+                  href="https://www.linkedin.com/company/saya-yaz%C4%B1l%C4%B1m/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <FaLinkedin className="text-2xl text-white hover:rotate-8 hover:text-main transition duration-300 " />
                 </a>
               </li>
               <li className="text-semibold text-white hover:text-main">
-                <a href="/projects">
+                <a href="/" target="_blank" rel="noopener noreferrer">
                   <FaSquareXTwitter className="text-2xl text-white hover:rotate-8 hover:text-main transition duration-300 " />
                 </a>
               </li>
               <li className="text-semibold text-white hover:text-main">
-                <a href="/projects">
+                <a
+                  href="https://www.instagram.com/saya_yazilim/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <FaInstagram className="text-2xl text-white hover:rotate-8 hover:text-main transition duration-300 " />
                 </a>
               </li>
@@ -65,14 +73,14 @@ const Footer = () => {
         {/* sosyal medya */}
       </section>
       <section className="flex items-center justify-center py-4 border-t border-white w-full">
-        <p className="text-md text-white">
-          © 2025{" "}
+        <p className="text-md text-white flex items-center justify-center gap-2">
+          © 2025
           <a
             href="https://www.linkedin.com/company/saya-yaz%C4%B1l%C4%B1m/"
             className="text-main hover:scale-110 transition duration-300 cursor-pointer"
           >
             Saya Yazılım
-          </a>{" "}
+          </a>
           . Tüm hakları saklıdır.
         </p>
       </section>

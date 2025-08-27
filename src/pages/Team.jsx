@@ -8,14 +8,17 @@ const Team = () => {
   return (
     <>
       {/* SEO Meta Etiketleri */}
-      <title>Saya Yazılım - Ekibimiz </title>
+      <title>
+        Saya Yazılım - Ekibimiz | 23 Yıllık Deneyimle Terzi Usulü Yazılım
+        Çözümleri{" "}
+      </title>
       <meta
         name="description"
         content="Saya Yazılım ekibimizi tanıyın. Deneyimli yazılım geliştiricileri, tasarımcılar ve proje yöneticilerinden oluşan uzman ekibimizle modern web teknolojilerinde çözümler üretiyoruz."
       />
       <meta
         name="keywords"
-        content="Saya Yazılım ekibi, yazılım geliştiricileri, web tasarımcıları, proje yöneticileri, uzman ekip, İstanbul yazılım ekibi, React geliştiricileri, Node.js geliştiricileri"
+        content="Saya Yazılım ekibi, yazılım geliştiricileri, web tasarımcıları, proje yöneticileri, uzman ekip, İstanbul yazılım ekibi, React geliştiricileri, Node.js geliştiricileri,Xlog Firewall"
       />
       <meta name="author" content="Saya Yazılım" />
       <meta name="robots" content="index, follow" />
@@ -92,6 +95,8 @@ const Team = () => {
           },
         })}
       </script>
+
+      {/* Sayfa İçeriği */}
 
       <Header />
       <main className="bg-secondary flex flex-col items-center justify-center px-4 sm:px-6 md:px-12">

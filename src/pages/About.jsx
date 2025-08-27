@@ -18,11 +18,11 @@ const About = () => {
       </title>
       <meta
         name="description"
-        content="Saya Yazılım, 23 yıllık deneyimle Antalya ve Türkiye genelinde terzi usulü web, mobil, fabrika otomasyon ve CRM çözümleri sunar. +60 referans ile güçlü ekip."
+        content="Saya Yazılım, 23 yıllık deneyimle Antalya ve Türkiye genelinde terzi usulü web, mobil, fabrika otomasyon ve CRM çözümleri sunar. Güçlü ekibimiz ile sektörde güvenilir bir yazılım ortağıyız."
       />
       <meta
         name="keywords"
-        content="Saya Yazılım, hakkımızda, yazılım ekibi, deneyim, şirket değerleri, web geliştirme, İstanbul yazılım şirketi"
+        content="Saya Yazılım, hakkımızda, yazılım ekibi, deneyim, şirket değerleri, web geliştirme, İstanbul yazılım şirketi,Xlog Firewall"
       />
       <meta name="author" content="Saya Yazılım" />
       <meta name="robots" content="index, follow" />
@@ -96,6 +96,7 @@ const About = () => {
         })}
       </script>
 
+      {/* Sayfa İçeriği */}
       <Header />
       <main className="bg-secondary flex flex-col items-center justify-center px-4 sm:px-6 md:px-12">
         {/* Başlık */}

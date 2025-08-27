@@ -13,16 +13,16 @@ const MissionAndVision = () => {
     <>
       {/* SEO Meta Etiketleri */}
       <title>
-        Saya Yazılım - Misyon & Vizyon | Antalya'dan Türkiye'ye Terzi Usulü
-        Yazılım Çözümleri
+        Saya Yazılım - Misyon & Vizyon |23 Yıllık Deneyimle Terzi Usulü Yazılım
+        Çözümleri
       </title>
       <meta
         name="description"
-        content="Saya Yazılım'ın misyonu, vizyonu ve temel değerlerini keşfedin. Modern web teknolojileri ile müşterilerimizin dijital dönüşümüne öncülük ediyor, sürdürülebilir çözümler üretiyoruz."
+        content="Saya Yazılım'ın misyonu, vizyonu ve temel değerlerini keşfedin. Terzi usulü yazılım çözümlerimiz ile müşterilerimizin ihtiyaçlarını karşılıyoruz, Modern web teknolojileri ile müşterilerimizin dijital dönüşümüne öncülük ediyor, sürdürülebilir çözümler üretiyoruz."
       />
       <meta
         name="keywords"
-        content="Saya Yazılım misyon, Saya Yazılım vizyon, şirket değerleri, yazılım şirketi hedefleri, dijital dönüşüm, web teknolojileri, İstanbul yazılım şirketi"
+        content="Saya Yazılım misyon, Saya Yazılım vizyon, şirket değerleri, yazılım şirketi hedefleri, dijital dönüşüm, web teknolojileri, İstanbul yazılım şirketi,Xlog Firewall"
       />
       <meta name="author" content="Saya Yazılım" />
       <meta name="robots" content="index, follow" />
@@ -99,6 +99,7 @@ const MissionAndVision = () => {
         })}
       </script>
 
+      {/* Sayfa İçeriği */}
       <Header />
       <main className="bg-secondary flex flex-col items-center justify-center px-4 sm:px-6 md:px-12">
         {/* Başlık */}

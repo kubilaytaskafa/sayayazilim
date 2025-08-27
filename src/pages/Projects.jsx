@@ -11,7 +11,8 @@ const Projects = () => {
     <>
       {/* SEO Meta Etiketleri */}
       <title>
-        Saya Yazılım - Projelerimiz | Terzi Usulü Yazılım Çözümlerimiz
+        Saya Yazılım - Projelerimiz | 23 Yıllık Deneyimle Terzi Usulü Yazılım
+        Çözümleri
       </title>
       <meta
         name="description"
@@ -19,7 +20,7 @@ const Projects = () => {
       />
       <meta
         name="keywords"
-        content="yazılım projeleri, web uygulamaları, mobil uygulamalar, React projeleri, Node.js projeleri, özel yazılım çözümleri, İstanbul yazılım şirketi"
+        content="yazılım projeleri, web uygulamaları, mobil uygulamalar, React projeleri, Node.js projeleri, özel yazılım çözümleri, İstanbul yazılım şirketi,Xlog Firewall"
       />
       <meta name="author" content="Saya Yazılım" />
       <meta name="robots" content="index, follow" />
@@ -95,6 +96,7 @@ const Projects = () => {
         })}
       </script>
 
+      {/* Sayfa İçeriği */}
       <Header />
       <main className="bg-secondary">
         <motion.h1

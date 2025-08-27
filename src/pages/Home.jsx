@@ -11,14 +11,16 @@ const Home = () => {
   return (
     <>
       {/* SEO Meta Etiketleri */}
-      <title>Saya Yazılım | 23 Yıllık Terzi Usulü Yazılım Çözümleri</title>
+      <title>
+        Saya Yazılım | 23 Yıllık Deneyimle Terzi Usulü Yazılım Çözümleri
+      </title>
       <meta
         name="description"
-        content="Saya Yazılım, 23 yıllık deneyimle Antalya ve Türkiye genelinde terzi usulü web geliştirme, mobil uygulama, fabrika otomasyon ve CRM çözümleri sunar. +60 referans."
+        content="Saya Yazılım, 23 yıllık deneyimle Antalya ve Türkiye genelinde terzi usulü web geliştirme, mobil uygulama, fabrika otomasyon ve CRM çözümleri sunar. +60 referansımız ile sektörde güvenilir bir yazılım ortağıyız."
       />
       <meta
         name="keywords"
-        content="yazılım, web geliştirme, React, Node.js, JavaScript, TypeScript, frontend, backend, fullstack, dijital çözümler, İstanbul"
+        content="yazılım, web geliştirme, React, Node.js, JavaScript, TypeScript, frontend, backend, fullstack, dijital çözümler, İstanbul , Xlog Firewall"
       />
       <meta name="author" content="Saya Yazılım" />
       <meta name="robots" content="index, follow" />
