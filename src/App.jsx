@@ -11,8 +11,7 @@ const About = lazy(() => import("./pages/About"));
 const MissionAndVision = lazy(() => import("./pages/MissionAndVision"));
 const Team = lazy(() => import("./pages/Team"));
 const ProjectDetails = lazy(() => import("./pages/ProjectDetails"));
-
-// Basit Tailwind spinner component
+const NotFound = lazy(() => import("./pages/NotFound"));
 
 const App = () => {
   return (
@@ -26,6 +25,7 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/mission-vision" element={<MissionAndVision />} />
           <Route path="/team" element={<Team />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </Suspense>
       <ScrollToUp />
