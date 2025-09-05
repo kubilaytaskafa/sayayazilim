@@ -2,6 +2,7 @@ import React, { Suspense, lazy } from "react";
 import { Route, Routes } from "react-router-dom";
 import ScrollToUp from "./components/defaultComponents/ScrollToup";
 import Loading from "./components/defaultComponents/Loading";
+import WhatsappIcon from "./components/defaultComponents/WhatsappIcon";
 
 // Lazy load sayfalar
 const Home = lazy(() => import("./pages/Home"));
@@ -28,7 +29,10 @@ const App = () => {
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Suspense>
+      {/* Whatsapp icon ve scroll to up bileşenleri */}
+
       <ScrollToUp />
+      <WhatsappIcon />
     </>
   );
 };
