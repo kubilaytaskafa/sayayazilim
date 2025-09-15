@@ -102,6 +102,16 @@ Uygun olduğunuzda geri dönüş yaparsanız sevinirim.
               +90 541 972 40 41
             </a>
           </div>
+          <div className="flex flex-row items-center gap-2">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3221.01919319147!2d30.6821681!3d36.915128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14c38fc0e9ef95cb%3A0x9f25916bcd3769ec!2zWcO8a3NhcsSxayBNYWhhbGxlc2kgSGFsaSBFZmVuZGlrIFNvayBTdGVz!5e0!3m2!1str!2str!4v1693984355157!5m2!1str!2str"
+              className=" w-80 h-60 shadow-md shadow-main rounded-md  lg:w-96  lg:h-72"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
         </div>
 
         {/* İletişim Formu */}
