@@ -5,10 +5,11 @@ const WhatsappIcon = () => {
   const [scrolled, setScrolled] = useState(false);
 
   // Mesaj
-  const message = `Merhaba, Saya Yazılım ile ilgili bilgi almak istiyorum.
-Özellikle [web sitesi / mobil uygulama / özel yazılım] geliştirme hizmetiniz hakkında detay verebilir misiniz?
-Müsait olduğunuzda dönüş yaparsanız sevinirim.
-Teşekkürler.`;
+  const message = `Merhaba,
+Saya Yazılım’ın web, mobil ve özel yazılım geliştirme hizmetleri hakkında bilgi almak isterim.
+Uygun olduğunuzda geri dönüş yaparsanız sevinirim.
+Şimdiden teşekkür ederim.
+`;
   const encodedMessage = encodeURIComponent(message);
 
   // Scroll kontrolü

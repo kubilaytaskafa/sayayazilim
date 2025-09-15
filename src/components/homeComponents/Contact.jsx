@@ -10,10 +10,10 @@ const Contact = () => {
   const [isVisible, setIsVisible] = useState(false);
   const ref = useRef(null);
   // ! whatsapp message template
-  const message = `Merhaba, Saya Yazılım ile ilgili bilgi almak istiyorum.
-Özellikle [web sitesi / mobil uygulama / özel yazılım] geliştirme hizmetiniz hakkında detay verebilir misiniz?
-Müsait olduğunuzda dönüş yaparsanız sevinirim.
-Teşekkürler.`;
+  const message = `Merhaba,
+Saya Yazılım’ın web, mobil ve özel yazılım geliştirme hizmetleri hakkında bilgi almak isterim.
+Uygun olduğunuzda geri dönüş yaparsanız sevinirim.
+Şimdiden teşekkür ederim.`;
   const encodedMessage = encodeURIComponent(message);
   useEffect(() => {
     const observer = new IntersectionObserver(
